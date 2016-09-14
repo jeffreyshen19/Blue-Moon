@@ -1,0 +1,19 @@
+nav{
+    background-color: #f5f5f5;
+    display: flex;
+    height: 50px; 
+    box-sizing: border-box;
+    a, a i{
+        color: $black;
+        font-family: montserrat;
+        line-height: 50px;
+        &:hover{
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+    padding: 0 $universal-padding 0 $universal-padding;
+    .left a{
+        margin-right: 5px;
+    }
+}

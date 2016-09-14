@@ -1,0 +1,76 @@
+header {
+    background-color: #171717;
+    height: 170px;
+    color: #bcbcbc;
+    box-sizing: border-box;
+    position: relative;
+    display: table;
+    width: 100vw;
+    .text {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    h1 {
+        font-family: montserrat;
+        line-height: 1em;
+        color: #6c6c6c;
+    }
+    p {
+        font-family: sourcesanspro;
+        margin-top: 0;
+    }
+    padding: 0 (3 * $universal-padding) 0 (3 * $universal-padding);
+    #ad {
+        width: 728px;
+        height: 90px;
+        z-index: 100;
+        background-color: #b9b9b9;
+        float: right;
+        margin-top: 40px;
+    }
+}
+
+#colorstrip {
+    width: 100vw;
+    height: 7px;
+    background-color: #59abe3;
+}
+
+#announcements{
+    width: 100vw;
+    background-color: #dcdcdc;
+    height: 45px;
+    padding-right: $universal-padding;
+    h2, p{
+        line-height: 45px;
+        color: #4a4a4a;
+    }
+    h2{
+        display: inline-block;
+        position: relative;
+        font-family: montserrat;
+        font-size: 0.9em;
+        background: #c4c4c4; 
+        padding-left: $universal-padding;
+        width: 150px;
+        &:after { 
+            content: " "; 
+            display: block; 
+            width: 0; 
+            height: 0;
+            border-top: 23px solid transparent;          
+            border-bottom: 22px solid transparent;
+            border-left: 15px solid #c4c4c4;
+            position: absolute;
+            top: 50%;
+            margin-top: -23px; 
+            left: 100%;
+            z-index: 2; 
+        }
+        margin-right: $universal-padding;
+    }
+    p{
+        font-family: sourcesanspro;
+        display: inline;
+    }
+}

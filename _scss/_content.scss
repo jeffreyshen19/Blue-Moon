@@ -1,0 +1,72 @@
+#content {
+    box-sizing: border-box;
+    padding: $universal-padding (2 * $universal-padding) $universal-padding (2 * $universal-padding);
+    a {
+        font-family: sourcesansprobold;
+        text-decoration: none;
+        color: $black;
+        &:hover {
+            color: $blue;
+        }
+    }
+    h1 {
+        font-family: montserrat;
+        color: $black;
+        line-height: 1em;
+    }
+    p {
+        font-family: sourcesanspro;
+        color: $gray;
+    }
+    p.description{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    p.subtitle {
+        font-size: 1.1em;
+        span {
+            margin-right: 10px;
+        }
+        .fa-star {
+            color: $yellow;
+        }
+    }
+    #tags {
+        span {
+            position: relative;
+            margin-left: 15px;
+            background-color: $blue;
+            color: white;
+            padding: 2.5px 4px 2.5px 12px;
+            font-family: montserrat;
+            &:before {
+                content: "";
+                float: left;
+                position: absolute;
+                top: 0;
+                left: -12px;
+                width: 0;
+                height: 0;
+                border-color: transparent $blue transparent transparent;
+                border-style: solid;
+                border-width: 12px 12px 12px 0;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0;
+                float: left;
+                width: 4px;
+                height: 4px;
+                -moz-border-radius: 2px;
+                -webkit-border-radius: 2px;
+                border-radius: 2px;
+                background: #fff;
+                -moz-box-shadow: -1px -1px 2px $blue;
+                -webkit-box-shadow: -1px -1px 2px $blue;
+                box-shadow: -1px -1px 2px $blue;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+---
+layout: default
+title: Blue Moon
+---
+<div id = "announcements">
+    <h2>Announcements</h2>
+    <p>Lorem ipsum</p>
+</div>
+
+<div id="home">
+    
+    <div class = "post-list">
+        <div class = "header-line">
+            <span>
+                RECENT
+            </span>
+        </div>
+        {% for post in site.posts limit: 10 %}
+            <section>
+                <a href="{{ post.url | prepend: site.baseurl }}"></a>
+                <h3>{{ post.title | escape }}</h3>
+                <p>{{post.description}}</p>
+                <p class = "subtitle">
+                    <span>{{post.author}}</span> • {{ post.date | date: "%b %-d, %Y" }}
+                </p>
+            </section>
+        {% endfor %}
+    </div>
+
+    <!--<div id = "subscribe">
+        <h2>Keep hearing from us</h2>
+        <p>Subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}">via RSS</a></p>
+    </div>-->
+</div>

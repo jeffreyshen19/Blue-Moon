@@ -1,0 +1,63 @@
+@font-face{
+    font-family: montserrat;
+    src: url("/Assets/Fonts/montserrat/Montserrat-Regular.otf");
+}
+
+@font-face{
+    font-family: sourcesanspro;
+    src: url("/Assets/Fonts/sans/SourceSansPro-Regular.otf");
+}
+
+@font-face{
+    font-family: sourcesansprobold;
+    src: url("/Assets/Fonts/sans/SourceSansPro-Bold.otf");
+}
+
+$blue: #1e8bc3;
+$light-blue: #59abe3;
+$black: #464646;
+$gray: #6c6c6c;
+$yellow: #F4D03F;
+    
+a, a i{
+    transition: 0.2s all;
+}
+
+.header-line {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.header-line > span {
+    position: relative;
+    display: inline-block;
+    font-family: montserrat;
+    color: $black;
+}
+
+.header-line > span:before,
+.header-line > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 2px;
+    background: $black;
+}
+
+.header-line > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.header-line > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+h1{
+    font-family: montserrat;
+    color: $black;
+}

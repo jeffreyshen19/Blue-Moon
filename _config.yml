@@ -1,0 +1,28 @@
+title: Blue Moon
+email: ali2@andover.edu
+description: > 
+  Blue Moon is Phillips Academy's first and only STEM magazine that delivers quality articles, commentaries, and information. 
+baseurl: ""
+url: "http://example.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+#Outputting
+permalink: /:categories/:title.html
+
+#Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"
+      
+#SCSS
+sass:
+  sass_dir: ./_scss
+  
+#Date
+timezone: America/New_York
