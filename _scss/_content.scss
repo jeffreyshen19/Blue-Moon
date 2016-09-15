@@ -69,4 +69,19 @@
             }
         }
     }
+    img{
+        margin: 20px auto 20px;
+        display: block;
+    }
+    #source-list{
+        font-family: sourcesanspro;
+        color: $gray;
+    }
+    blockquote{
+        margin: 20px 0 20px;
+    }
+    center{
+        color: $gray;
+        font-family: sourcesanspro;
+    }
 }

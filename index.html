@@ -15,7 +15,7 @@ title: Blue Moon
                 RECENT
             </span>
         </div>
-        {% for post in site.posts limit: 10 %}
+        {% for post in site.posts limit: 5 %}
             <section>
                 <a href="{{ post.url | prepend: site.baseurl }}"></a>
                 <h3>{{ post.title | escape }}</h3>

@@ -49,14 +49,26 @@
                 {% endfor %}
             </p>
             
-            <div id = "sources">
-                <br>
-                <div class = "header-line">
-                    <span>
-                        SOURCES
-                    </span>
+            {% if {{page.sources}}%}
+                <div id = "sources">
+                    <br>
+                    <div class = "header-line">
+                        <span>
+                            SOURCES
+                        </span>
+                    </div>
+                    <br>
+                    
+                    <div id = "source-list">
+                        {% for source in {{page.sources}}%}
+                            {{source}}
+                        <br>
+                        {% endfor %}
+                    </div>
                 </div>
-            </div>
+            {% endif %}
+            
+            
         </div>
 
         <footer>
