@@ -7,4 +7,11 @@ $(document).ready(function(){
             customClass: "popup"
         });
     }
+    $("#logo").hover(function(){
+        $(this).attr("src","/Assets/Images/1.png");
+        }, function(){
+        $(this).attr("src","/Assets/Images/2.png");
+    });
 });
+
+$("#logo")
