@@ -63,7 +63,7 @@
             #recent, #categories{
                 text-align: center;
             }
-            #featured-posts{
+            #featured-posts {
                 .wrap{
                     section{
                         width: 100%;
@@ -72,13 +72,18 @@
                             margin: 0 0 -6px;
                         }
                         margin: 0 0 -6px 0;
+                        .textbox{
+                            transform: translateX(-50%);
+                            left: 50%;
+                        }
                     }
                 }
                 section{
-                    .text-box{
-                        left: 50%;
-                        transform: translateX(-50%);
+                    .textbox{
+                        margin: 0 auto;
+                        width: 80%;
                     }
+                    width: 100%;
                 }
             }
             #about{
