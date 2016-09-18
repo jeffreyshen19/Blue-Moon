@@ -2,7 +2,7 @@
 layout: post
 title: "Quantum Computers"
 description: "In the very near future?"
-category: General
+categories: General
 author: Eric You
 email: eyou@andover.edu
 tags: Quantum Computers

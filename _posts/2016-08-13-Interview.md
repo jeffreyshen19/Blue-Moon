@@ -2,7 +2,7 @@
 layout: post
 title: Interview
 description: "With James Lloyd Smith"
-category: Science
+categories: Science
 author: Jocelyn Shen
 email: jshen1@andover.edu
 tags: Ecology Biology Chemistry Physics Science Interview

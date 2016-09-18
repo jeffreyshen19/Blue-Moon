@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blue Moon | Archives
+header: Archives
+subtitle: View all Blue Moon Articles
+permalink: "/archives"
+---
+
+<div id="home">
+    
+    <div class = "post-list">
+        <div class = "header-line">
+            <span>
+                THIS YEAR
+            </span>
+        </div>
+        {% for post in site.posts %}
+            <section>
+                <a href="{{ post.url | prepend: site.baseurl }}"></a>
+                <h3>{{ post.title | escape }}</h3>
+                <p>{{post.description}}</p>
+                <p class = "subtitle">
+                    <span>{{post.author}}</span> • {{ post.date | date: "%b %-d, %Y" }}
+                </p>
+            </section>
+        {% endfor %}
+    </div>
+</div>

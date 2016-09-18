@@ -4,31 +4,117 @@ title: Blue Moon
 ---
 <div id = "announcements">
     <h2>Announcements</h2>
-    <p>Lorem ipsum</p>
+    <p>Blue Moon up and running!</p>
 </div>
 
 <div id="home">
-    
-    <div class = "post-list">
-        <div class = "header-line">
-            <span>
-                RECENT
-            </span>
-        </div>
-        {% for post in site.posts limit: 5 %}
-            <section>
-                <a href="{{ post.url | prepend: site.baseurl }}"></a>
-                <h3>{{ post.title | escape }}</h3>
-                <p>{{post.description}}</p>
+    <div class = "bodybox" id = "featured-posts">
+        {% assign featured_posts = (site.posts|where:"featured","true") %}
+        {% assign big_featured = featured_posts[0] %}
+        <section class = "img-large">
+            <a href="{{ big_featured.url | prepend: site.baseurl }}"></a>
+            <div class = "img" style = "background-image:url(/Assets/Article/{{big_featured.img}})"></div>
+            <div class = "textbox">
+                <h1>{{big_featured.title}}</h1>
+                <p class = "description">{{big_featured.description}}</p>
                 <p class = "subtitle">
-                    <span>{{post.author}}</span> • {{ post.date | date: "%b %-d, %Y" }}
+                    <span>{{big_featured.author}}</span> • {{ big_featured.date | date: "%b %-d, %Y" }}
                 </p>
+            </div> 
+        </section>
+        <div class = "wrap">
+            <section>
+                <a href="{{ featured_posts[1].url | prepend: site.baseurl }}"></a>
+                <div class = "img" style = "background-image:url(/Assets/Article/{{featured_posts[1].img}})"></div>
+                <div class = "textbox">
+                    <h1>{{featured_posts[1].title}}</h1>
+                    <p class = "description">{{featured_posts[1].description}}</p>
+                    <p class = "subtitle">
+                        <span>{{featured_posts[1].author}}</span> • {{ featured_posts[1].date | date: "%b %-d, %Y" }}
+                    </p>
+                </div> 
             </section>
-        {% endfor %}
+            <section>
+                <a href="{{ featured_posts[2].url | prepend: site.baseurl }}"></a>
+                <div class = "img" style = "background-image:url(/Assets/Article/{{featured_posts[2].img}})"></div>
+                <div class = "textbox">
+                    <h1>{{featured_posts[2].title}}</h1>
+                    <p class = "description">{{featured_posts[2].description}}</p>
+                    <p class = "subtitle">
+                        <span>{{featured_posts[2].author}}</span> • {{ featured_posts[2].date | date: "%b %-d, %Y" }}
+                    </p>
+                </div> 
+            </section>
+        </div>
     </div>
-
-    <!--<div id = "subscribe">
-        <h2>Keep hearing from us</h2>
-        <p>Subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}">via RSS</a></p>
-    </div>-->
+    
+    
+    <div id = "about" class = "bodybox">
+        <h1>WHO WE ARE</h1>
+        <hr>
+        <p>
+            Our mission at Blue Moon is to foster curiosity and spread scientific awareness. To do this, we bi-annually produce Andover’s only STEM-based magazine. Now, anyone passionate about the sciences have an opportunity to practice the final, possibly most important, step of the scientific method: the sharing of results. All articles are written by students, for students. Enough talk about us, though— start exploring!
+        </p>
+    </div>
+    
+    <div id = "subscribe" class = "banner">
+        <div class = "center">
+            <h1>Write for us!</h1>
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='#success'; location.reload()}"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSf8iPQlmuQZkcKhbIm-NJMSA3cL0x_JLlu7gPQ0DRnkhRuFVA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                <input type="text" class="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email Address" aria-describedby="i.desc.248482367 i.err.248482367" name="entry.1877862848" value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder = "Email Address"/>
+                <input type = "submit" class = "submit" value = "JOIN US!">
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="draftResponse" value="[,,&quot;-8192416659854519564&quot;]">
+                <input type="hidden" name="pageHistory" value="0">
+                <input type="hidden" name="fbzx" value="-8192416659854519564">
+            </form>
+            <p>or <a href = "mailto:{{site.email}}">email {{site.email}}</a></p>
+        </div>
+    </div>
+    
+    <div id = "home-grid" class = "grid">
+        <div id = "recent" class = "post-list">
+            <h1>Recent</h1>
+            <hr>
+            {% for post in site.posts limit: 5 %}
+                <section>
+                    <a href="{{ post.url | prepend: site.baseurl }}"></a>
+                    <h3>{{ post.title | escape }}</h3>
+                    <p>{{post.description}}</p>
+                    <p class = "subtitle">
+                        <span>{{post.author}}</span> • {{ post.date | date: "%b %-d, %Y" }}
+                    </p>
+                </section>
+            {% endfor %}
+        </div>
+        <div id = "categories">
+            <h1>Categories</h1>
+            <hr>
+            <section>
+                <h3>Science</h3>
+                <p class = "subtitle">{{site.categories.Science | size}} Articles</p>
+            </section>
+            <section>
+                <h3>Technology</h3>
+                <p class = "subtitle">{{site.categories.Technology | size}} Articles</p>
+            </section>
+            <section>
+                <h3>Engineering</h3>
+                <p class = "subtitle">{{site.categories.Engineering | size}} Articles</p>
+            </section>
+            <section>
+                <h3>Math</h3>
+                <p class = "subtitle">{{site.categories.Math | size}} Articles</p>
+            </section>
+            <section>
+                <h3>General</h3>
+                <p class = "subtitle">{{site.categories.General | size}} Articles</p>
+            </section>
+        </div>
+    </div>
+    
 </div>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>

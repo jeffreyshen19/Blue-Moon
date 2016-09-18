@@ -2,7 +2,7 @@
 layout: post
 title: Exosomes
 description: "Their diagnostic and therapeutic value"
-category: Science
+categories: Science
 author: David Moon
 email: smoon@andover.edu
 tags: Genetics Biology Science

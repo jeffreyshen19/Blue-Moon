@@ -2,7 +2,7 @@
 layout: post
 title: "Biomathematics"
 description: "Comparing Healthy and Diseased Vascular Networks to Better Understand Pathologies"
-category: Science
+categories: Science
 author: Jocelyn Shen
 email: jshen1@andover.edu
 tags: Angicart Biology Science Programming

@@ -2,10 +2,12 @@
 layout: post
 title: "Immunotherapy?"
 description: "Practical Implications of Dendritic Cell Motility"
-category: Science
+categories: Science
 author: Cindy Chen
 email: xchen@andover.edu
 tags: Biology Science Immunotherapy
+featured: true
+img: 74680380.png
 sources: |
     1. Dehring, D. A. Klos, F. Clarke, B. G. Ricart, Y. Huang, T. S. Gomez, E. K. Williamson, D. A. Hammer, D. D. Billadeau, Y. Argon, and J. K. Burkhardt. "Hematopoietic Lineage Cell-Specific Protein 1 Functions in Concert with the Wiskott-Aldrich Syndrome Protein To Promote Podosome Array Organization and Chemotaxis in Dendritic Cells." The Journal of Immunology 186.8 (2011): 4805-818. Print.<br>
     2. Huang, Y., C. Biswas, D. A. Klos Dehring, U. Sriram, E. K. Williamson, S. Li, F. Clarke, S. Gallucci, Y. Argon, and J. K. Burkhardt. "The Actin Regulatory Protein HS1 Is Required for Antigen Uptake and Presentation by Dendritic Cells." The Journal of Immunology 187.11 (2011): 5952-963.Print.<br>  

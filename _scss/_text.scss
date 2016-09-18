@@ -17,6 +17,7 @@ $blue: #1e8bc3;
 $light-blue: #59abe3;
 $black: #464646;
 $gray: #6c6c6c;
+$light-gray: #b9b9b9;
 $yellow: #F4D03F;
     
 a, a i{
@@ -60,4 +61,18 @@ a, a i{
 h1{
     font-family: montserrat;
     color: $black;
+}
+
+.bodybox{
+    h1{
+        color: $black;
+        font-family: montserrat;
+        font-size: 1em;
+    }
+    hr{
+        width: 25px;
+        margin: 0 0 5px calc(50% - 12.5px);
+        border: none;
+        border-top: 3px solid $black;
+    }
 }

@@ -2,7 +2,7 @@
 layout: post
 title: "Nanofabrication as Done by Kindergarteners and Nobel Prize Physicists alike"
 description: "The power of graphene"
-category: Science
+categories: Science
 author: Sydney Marler
 email: smarler18@andover.edu
 tags: Nanofabrication Physics

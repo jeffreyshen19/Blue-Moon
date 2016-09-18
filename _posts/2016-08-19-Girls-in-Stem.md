@@ -2,9 +2,11 @@
 layout: post
 title: Girls in Stem
 description: Why the gap in high level STEM fields?
-category: General
+categories: General
 author: Elizabeth Tso
 email: etso@andover.edu
+featured: true
+img: gis.jpeg
 ---
 
 In thirty-five years, only three of the 224 USA national team members sent to the International Mathematics Olympiad (IMO) have been female. That’s equivalent to 1.3 percent. You might ask why this astounding gender gap exists in the realm of high level mathematics - I most certainly hope that you do. But, in the frank words of IMO gold medalist Evan Chen, we’ve got pretty much “no clue whatsoever.” 

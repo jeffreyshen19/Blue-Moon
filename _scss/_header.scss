@@ -39,10 +39,10 @@ header {
 #announcements{
     width: 100vw;
     background-color: #dcdcdc;
-    height: 45px;
+    height: 35px;
     padding-right: $universal-padding;
     h2, p{
-        line-height: 45px;
+        line-height: 35px;
         color: #4a4a4a;
     }
     h2{
@@ -58,12 +58,12 @@ header {
             display: block; 
             width: 0; 
             height: 0;
-            border-top: 23px solid transparent;          
-            border-bottom: 22px solid transparent;
+            border-top: 18px solid transparent;          
+            border-bottom: 17px solid transparent;
             border-left: 15px solid #c4c4c4;
             position: absolute;
             top: 50%;
-            margin-top: -23px; 
+            margin-top: -18px; 
             left: 100%;
             z-index: 2; 
         }

@@ -10,6 +10,7 @@
 
     <link href="/css/post.css" rel="stylesheet" type="text/css">
     <link href="/Assets/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="/Assets/Images/1.png">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                 {{page.description}}
             </p>
             <p class = "subtitle">
-                by <a href = "mailto:{{page.email}}">{{page.author}}</a> in <a href = "">{{page.category}}</a>
+                by <a href = "mailto:{{page.email}}">{{page.author}}</a> in <a href = "">{{page.categories}}</a>
                 <br>
                 
                 <span><i class = "fa fa-calendar"></i> {{ page.date | date: '%B %d, %Y' }}</span>
@@ -38,6 +39,9 @@
             </p>
             
             <br>
+            {% if page.featured %}
+                <img src = "/Assets/Article/{{page.img}}" class = "jumbo">
+            {% endif %}
             {{ content }}
             
             <p id = "tags">
@@ -77,6 +81,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </body>
 
 </html>

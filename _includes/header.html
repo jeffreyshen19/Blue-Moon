@@ -1,5 +1,17 @@
 <div class="text">
-    <h1>{{site.title}}</h1>
-    <p>STEM Magazine based in Phillips Academy</p>
+    <h1>
+        {% if {{page.header}} == %}
+            Blue Moon
+        {% else %}
+            {{page.header}}
+        {% endif %}
+    </h1>
+    <p>
+        {% if {{page.subtitle}} == %}
+            Phillips Academy's first and only STEM Magazine
+        {% else %}
+            {{page.subtitle}}
+        {% endif %}
+    </p>
 </div>
 <div id="ad"></div>

@@ -7,13 +7,22 @@ nav{
         color: $black;
         font-family: montserrat;
         line-height: 50px;
+        &:visited{
+            color: $black;
+        }
         &:hover{
             text-decoration: none;
             color: $blue;
         }
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        margin-right: 7px;
     }
     padding: 0 $universal-padding 0 $universal-padding;
     .left a{
         margin-right: 5px;
     }
 }
+
