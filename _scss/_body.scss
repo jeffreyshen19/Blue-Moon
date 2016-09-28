@@ -4,6 +4,14 @@
         margin: 0 auto;
         width: 70vw;
         padding: $universal-padding 0 $universal-padding;
+        #join a{
+          color: $black;
+          text-decoration: none;
+          font-family: sourcesansprobold;
+          &:hover{
+            color: $blue;
+          }
+        }
         #featured-posts {
             height: 450px;
             margin: 30px 0 30px;
