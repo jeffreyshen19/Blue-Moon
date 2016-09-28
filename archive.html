@@ -8,29 +8,83 @@ permalink: "/archives"
 
 <div id="home">
     <div class = "sort bodybox">
-        <p>Show posts from <a href = "#month">this month</a>, <a href = "#year">this year</a>, or <a href = "#all">the beginning of time</a></p>
+        <p>Show posts from <a href = "#month" onclick = "location.reload()">this month</a>, <a href = "#year" onclick = "location.reload()">this year</a>, or <a href = "#all" onclick = "location.reload()">the beginning of time</a></p>
         <br>
     </div>
-    
+
     <div class = "post-list">
+        <div id = "showmonth" hidden>
         <div class = "header-line">
             <span>
                 THIS MONTH
             </span>
         </div>
+
+        {% assign currentTime = site.time | date: "%s" %}
         {% for post in site.posts %}
-            
+          {% assign postTime = post.date | date: "%s"%}
+          {% assign offset = currentTime | minus: postTime %}
+          {% if offset < 2592000 %}
             <section>
                 <a href="{{ post.url | prepend: site.baseurl }}"></a>
                 <h3>{{ post.title | escape }}</h3>
                 <p>{{post.description}}</p>
-                <p class = "subtitle"> 
-                    <span>{{post.author}}</span> • {{ post.date | date: "%b %-d, %Y" }}
+                <p class = "subtitle">
+                    <span>{{post.author}}</span> • {{ post.date | date: "%b %d, %Y" }}
                 </p>
-            </section>  
-            
+            </section>
+          {% else %}
+            {% break %}
+          {%endif%}
         {% endfor %}
-        
-        
+        <br>
+        </div>
+
+
+        <div id = "showyear" hidden="">
+          <div class = "header-line">
+              <span>
+                THIS YEAR
+              </span>
+          </div>
+        {% for post in site.posts %}
+          {% assign postTime = post.date | date: "%s"%}
+          {% assign offset = currentTime | minus: postTime %}
+          {% if offset > 2592000 and offset < 31104000%}
+            <section>
+                <a href="{{ post.url | prepend: site.baseurl }}"></a>
+                <h3>{{ post.title | escape }}</h3>
+                <p>{{post.description}}</p>
+                <p class = "subtitle">
+                    <span>{{post.author}}</span> • {{ post.date | date: "%b %d, %Y" }}
+                </p>
+            </section>
+          {%endif%}
+        {% endfor %}
+        </div>
+
+        <div id = "year-all" hidden>
+          <div class = "header-line">
+              <span>
+                THIS YEAR
+              </span>
+          </div>
+          {% for post in site.posts %}
+            {% assign postTime = post.date | date: "%s"%}
+            {% assign offset = currentTime | minus: postTime %}
+            {% if offset < 31104000%}
+              <section>
+                  <a href="{{ post.url | prepend: site.baseurl }}"></a>
+                  <h3>{{ post.title | escape }}</h3>
+                  <p>{{post.description}}</p>
+                  <p class = "subtitle">
+                      <span>{{post.author}}</span> • {{ post.date | date: "%b %d, %Y" }}
+                  </p>
+              </section>
+            {% else %}
+              {% break %}
+            {%endif%}
+          {% endfor %}
+        </div>
     </div>
 </div>

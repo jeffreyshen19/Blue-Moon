@@ -53,7 +53,7 @@
                         }
                     }
                 }
-                
+
             }
             section.img-large {
                 width: 67%;
@@ -99,7 +99,7 @@
                 }
             }
         }
-        
+
         #home-grid {
             width: 100%;
             display: flex;
@@ -167,6 +167,11 @@
                     color: $black;
                 }
             }
+        }
+        #search-results{
+          .error{
+            font-family: montserrat;
+          }
         }
     }
     #masthead {

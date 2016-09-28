@@ -9,7 +9,7 @@
     <title>{{page.title}}</title>
 
     <link href="/Assets/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <script src="/Assets/swal/dist/sweetalert.min.js"></script> 
+    <script src="/Assets/swal/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/Assets/swal/dist/sweetalert.css">
     <link href="/css/main.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" href="/Assets/Images/1.png">
@@ -24,7 +24,7 @@
         <header>
             {% include header.html %}
         </header>
-        
+
         <div id="content">
             <div id = "colorstrip"></div>
             {{ content }}
@@ -33,11 +33,14 @@
         <footer>
             {% include footer.html %}
         </footer>
-        
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/Assets/JS/main.js"></script>
+    {% if page.search == true %}
+      <script src = "/Assets/JS/search.js"></script>
+    {% endif %}
 </body>
 
 </html>

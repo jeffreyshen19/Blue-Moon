@@ -16,7 +16,7 @@ permalink: "/featured"
                 <h1>{{big_featured.title}}</h1>
                 <p class="description">{{big_featured.description}}</p>
                 <p class="subtitle">
-                    <span>{{big_featured.author}}</span> • {{ big_featured.date | date: "%b %-d, %Y" }}
+                    <span>{{big_featured.author}}</span> • {{ big_featured.date | date: "%b %d, %Y" }}
                 </p>
             </div>
         </section>
@@ -28,7 +28,7 @@ permalink: "/featured"
                     <h1>{{featured_posts[1].title}}</h1>
                     <p class="description">{{featured_posts[1].description}}</p>
                     <p class="subtitle">
-                        <span>{{featured_posts[1].author}}</span> • {{ featured_posts[1].date | date: "%b %-d, %Y" }}
+                        <span>{{featured_posts[1].author}}</span> • {{ featured_posts[1].date | date: "%b %d, %Y" }}
                     </p>
                 </div>
             </section>
@@ -39,13 +39,13 @@ permalink: "/featured"
                     <h1>{{featured_posts[2].title}}</h1>
                     <p class="description">{{featured_posts[2].description}}</p>
                     <p class="subtitle">
-                        <span>{{featured_posts[2].author}}</span> • {{ featured_posts[2].date | date: "%b %-d, %Y" }}
+                        <span>{{featured_posts[2].author}}</span> • {{ featured_posts[2].date | date: "%b %d, %Y" }}
                     </p>
                 </div>
             </section>
         </div>
     </div>
-    
+
     <div class = "post-list">
         <div class = "header-line">
             <span>
@@ -62,7 +62,7 @@ permalink: "/featured"
                         <h3>{{ post.title | escape }}</h3>
                         <p>{{post.description}}</p>
                         <p class = "subtitle">
-                            <span>{{post.author}}</span> • {{ post.date | date: "%b %-d, %Y" }}
+                            <span>{{post.author}}</span> • {{ post.date | date: "%b %d, %Y" }}
                         </p>
                     </section>
                 {% endif %}
