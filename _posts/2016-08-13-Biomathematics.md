@@ -5,7 +5,6 @@ description: "Comparing Healthy and Diseased Vascular Networks to Better Underst
 categories: Science
 author: Jocelyn Shen
 email: jshen1@andover.edu
-tags: Angicart Biology Science Programming
 ---
 
 By recognizing the self-similarity (a property where at any magnification, a smaller piece of an object is similar to the object as a whole) in vascular systems, relationships between vessel characteristics at different levels of the network's hierarchy can be recognized. These relationships could be important for identifying differences between the diseased state of a system versus the healthy state of a system. These observations have been shown to be important for drug delivery, tumor growth, and could potentially reveal some insight on stroke recovery.<br><br>

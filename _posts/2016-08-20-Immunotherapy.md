@@ -5,7 +5,6 @@ description: "Practical Implications of Dendritic Cell Motility"
 categories: Science
 author: Cindy Chen
 email: xchen@andover.edu
-tags: Biology Science Immunotherapy
 featured: true
 img: 74680380.png
 sources: |

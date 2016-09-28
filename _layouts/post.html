@@ -44,14 +44,27 @@
             {% endif %}
             {{ content }}
             
-            <p id = "tags">
+            <div class = "pagenav">
+                <br>
+                {%if {{page.previous}} %}
+                    <a href = "{{ page.previous.url | prepend: site.baseurl }}">&laquo; {{page.previous.title}} </a>
+                {% endif %}
+                {% if {{page.next}} %}
+                    <a href = "{{ page.next.url | prepend: site.baseurl }}" class = "next">{{page.next.title}} &raquo;</a>
+                {% endif %}
                 <br>
                 <br>
+            </div>
+            
+            <!--<p id = "tags">
                 
                 {% for tag in {{page.tags}} %}
                     <span>{{tag}}</span>
                 {% endfor %}
-            </p>
+                <br>
+            </p>-->
+            
+
             
             {% if {{page.sources}}%}
                 <div id = "sources">

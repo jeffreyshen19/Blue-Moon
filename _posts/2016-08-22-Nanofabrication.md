@@ -5,7 +5,6 @@ description: "The power of graphene"
 categories: Science
 author: Sydney Marler
 email: smarler18@andover.edu
-tags: Nanofabrication Physics
 ---
 
 *Riiipp….Riiiipppp.*

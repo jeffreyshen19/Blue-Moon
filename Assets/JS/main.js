@@ -1,3 +1,6 @@
+var now = Date.now();
+var nextArticle = new Date(2017, 0, 1);
+
 $(document).ready(function(){
     var hash = location.hash;
     if(hash == "#success"){
@@ -12,6 +15,7 @@ $(document).ready(function(){
         }, function(){
         $(this).attr("src","/Assets/Images/2.png");
     });
+    var daysuntil = Math.round((nextArticle.getTime() - now) / 86400000);
+    console.log(daysuntil)
+    $("#days-until h1").html(daysuntil);
 });
-
-$("#logo")

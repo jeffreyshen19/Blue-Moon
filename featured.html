@@ -7,23 +7,65 @@ permalink: "/featured"
 ---
 
 <div id="home">
+    <div class="bodybox" id="featured-posts">
+        {% assign featured_posts = (site.posts|where:"featured","true") %} {% assign big_featured = featured_posts[0] %}
+        <section class="img-large">
+            <a href="{{ big_featured.url | prepend: site.baseurl }}"></a>
+            <div class="img" style="background-image:url(/Assets/Article/{{big_featured.img}})"></div>
+            <div class="textbox">
+                <h1>{{big_featured.title}}</h1>
+                <p class="description">{{big_featured.description}}</p>
+                <p class="subtitle">
+                    <span>{{big_featured.author}}</span> • {{ big_featured.date | date: "%b %-d, %Y" }}
+                </p>
+            </div>
+        </section>
+        <div class="wrap">
+            <section>
+                <a href="{{ featured_posts[1].url | prepend: site.baseurl }}"></a>
+                <div class="img" style="background-image:url(/Assets/Article/{{featured_posts[1].img}})"></div>
+                <div class="textbox">
+                    <h1>{{featured_posts[1].title}}</h1>
+                    <p class="description">{{featured_posts[1].description}}</p>
+                    <p class="subtitle">
+                        <span>{{featured_posts[1].author}}</span> • {{ featured_posts[1].date | date: "%b %-d, %Y" }}
+                    </p>
+                </div>
+            </section>
+            <section>
+                <a href="{{ featured_posts[2].url | prepend: site.baseurl }}"></a>
+                <div class="img" style="background-image:url(/Assets/Article/{{featured_posts[2].img}})"></div>
+                <div class="textbox">
+                    <h1>{{featured_posts[2].title}}</h1>
+                    <p class="description">{{featured_posts[2].description}}</p>
+                    <p class="subtitle">
+                        <span>{{featured_posts[2].author}}</span> • {{ featured_posts[2].date | date: "%b %-d, %Y" }}
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
     
     <div class = "post-list">
         <div class = "header-line">
             <span>
-                THIS YEAR
+                OLDER
             </span>
         </div>
+        {% assign counter = 0 %}
         {% for post in site.posts %}
-            {%  if post.featured == true %}
-                <section>
-                    <a href="{{ post.url | prepend: site.baseurl }}"></a>
-                    <h3>{{ post.title | escape }}</h3>
-                    <p>{{post.description}}</p>
-                    <p class = "subtitle">
-                        <span>{{post.author}}</span> • {{ post.date | date: "%b %-d, %Y" }}
-                    </p>
-                </section>
+            {%  if post.featured == true%}
+                {% assign counter = counter | plus: 1 %}
+                {% if counter > 3 %}
+                    <section>
+                        <a href="{{ post.url | prepend: site.baseurl }}"></a>
+                        <h3>{{ post.title | escape }}</h3>
+                        <p>{{post.description}}</p>
+                        <p class = "subtitle">
+                            <span>{{post.author}}</span> • {{ post.date | date: "%b %-d, %Y" }}
+                        </p>
+                    </section>
+                {% endif %}
             {% endif %}
         {% endfor %}
     </div>

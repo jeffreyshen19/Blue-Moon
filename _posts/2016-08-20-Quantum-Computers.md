@@ -5,7 +5,6 @@ description: "In the very near future?"
 categories: General
 author: Eric You
 email: eyou@andover.edu
-tags: Quantum Computers
 ---
 
 Recently, researchers at the University of Oxford have demonstrated laser-driven two-qubit and single-qubit logic gates with accuracies above 99.9%, which are both significantly above the approximately 99% minimum accuracy threshold required for fault-tolerant quantum computation.

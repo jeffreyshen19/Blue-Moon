@@ -88,4 +88,10 @@
         color: $gray;
         font-family: sourcesanspro;
     }
+    .pagenav{
+        width: 100%;
+        .next{
+            float: right;
+        }
+    }
 }

@@ -1,10 +1,16 @@
 <div class="left">
-    <a href="/"><img src = "/Assets/Images/2.png" id = "logo"></a>
+    <a href="/"><img src="/Assets/Images/2.png" id="logo"></a>
     <a href="/featured">FEATURED</a>
     <a href="/archives">ARCHIVE</a>
     <a href="/join">JOIN US</a>
-</div>
-<div class="right">
     <a href="mailto:{{site.email}}"><i class = "fa fa-envelope"></i></a>
     <a href=""><i class = "fa fa-facebook-square"></i></a>
+</div>
+<div class="right">
+    <div class="search">
+        <i class="fa fa-search"></i>
+        <form action = "/search.html" method = "get">
+            <input type = "text" placeholder="Search" name = "query">
+        </form>
+    </div>
 </div>

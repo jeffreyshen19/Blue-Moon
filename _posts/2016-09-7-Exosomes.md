@@ -5,7 +5,6 @@ description: "Their diagnostic and therapeutic value"
 categories: Science
 author: David Moon
 email: smoon@andover.edu
-tags: Genetics Biology Science
 ---
 
 Exosomes are small membrane vesicles (40-100nm) that most cells release into their surroundings. They contain functional biomolecules, such as protein, mRNA, microRNA, and surprisingly even dsDNA, that can be horizontally transferred to recipient cells. This quality made scientists to believe that exosomes might play a major role in cancer metasisis. Also, it was observed that cancer patients have significantly higher numbers of exosomes circulating in their blood stream, also suggesting that exosomes could be contributing to pro-metasizing phenotype. Using these properties, scientists are aiming to use exosomes towards cancer detection and treatment. 

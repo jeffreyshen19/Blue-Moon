@@ -7,22 +7,30 @@ permalink: "/archives"
 ---
 
 <div id="home">
+    <div class = "sort bodybox">
+        <p>Show posts from <a href = "#month">this month</a>, <a href = "#year">this year</a>, or <a href = "#all">the beginning of time</a></p>
+        <br>
+    </div>
     
     <div class = "post-list">
         <div class = "header-line">
             <span>
-                THIS YEAR
+                THIS MONTH
             </span>
         </div>
         {% for post in site.posts %}
+            
             <section>
                 <a href="{{ post.url | prepend: site.baseurl }}"></a>
                 <h3>{{ post.title | escape }}</h3>
                 <p>{{post.description}}</p>
-                <p class = "subtitle">
+                <p class = "subtitle"> 
                     <span>{{post.author}}</span> • {{ post.date | date: "%b %-d, %Y" }}
                 </p>
-            </section>
+            </section>  
+            
         {% endfor %}
+        
+        
     </div>
 </div>

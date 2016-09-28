@@ -1,28 +1,54 @@
-nav{
+nav {
     background-color: #f5f5f5;
     display: flex;
-    height: 50px; 
+    height: 50px;
     box-sizing: border-box;
-    a, a i{
-        color: $black;
+    a {
         font-family: montserrat;
+    }
+    .left a,
+    .left i {
+        margin-right: 5px;
+        color: $black;
         line-height: 50px;
-        &:visited{
+        &:visited {
             color: $black;
         }
-        &:hover{
+        &:hover {
             text-decoration: none;
             color: $blue;
         }
     }
-    img{
+    img {
         width: 30px;
         height: 30px;
         margin-right: 7px;
     }
     padding: 0 $universal-padding 0 $universal-padding;
-    .left a{
-        margin-right: 5px;
+    .search {
+        position: relative;
+        width: 250px;
+        height: 32px;
+        margin-top: 8.5px;
+        float: right;
+        input, .fa-search {
+            color: $gray;
+        }
+        input {
+            text-indent: 30px;
+            height: 32px;
+            box-sizing: border-box;
+            font-family: montserrat;
+            font-size: 0.9em;
+            width: 100%;
+            border: 1px solid $light-gray;
+            border-radius: 5px;
+        }
+        .fa-search {
+            position: absolute;
+            top: 8px;
+            left: 7px;
+            font-size: 15px;
+        }
     }
 }
-

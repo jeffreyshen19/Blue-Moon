@@ -133,7 +133,7 @@
                 border-top: 2px solid $black;
             }
         }
-        #about {
+        #about , #join{
             p {
                 width: 60%;
                 margin: 0 auto;
@@ -142,8 +142,31 @@
                 text-align: justify;
             }
         }
-        #subscribe {
+        #join{
+            p{
+                width: 100%;
+            }
+        }
+        #subscribe, #days-until{
             background-color: #dcdcdc;
+        }
+        #days-until{
+            h1{
+                font-size: 4em;
+                line-height: 1em;
+            }
+        }
+        .sort{
+            font-family: montserrat;
+            text-align: left;
+            color: $black;
+            a{
+                text-decoration: none;
+                color: $blue;
+                &:hover{
+                    color: $black;
+                }
+            }
         }
     }
     #masthead {

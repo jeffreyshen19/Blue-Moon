@@ -5,7 +5,6 @@ description: "How Molecular and Evolutionary Biology can Explain Emotions"
 categories: Science
 author: Jocelyn Shen
 email: jshen1@andover.edu
-tags: Molecular Evolutionary Biology Science
 ---
 
 “Human behavior flows from three main sources: desire, emotion, and knowledge.” - Plato.
