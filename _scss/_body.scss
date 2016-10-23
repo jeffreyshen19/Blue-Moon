@@ -74,6 +74,10 @@
         }
         .post-list,
         #categories {
+            h1{
+              color: $black;
+              font-size: 1.2em;
+            }
             width: 100%;
             section {
                 width: 100%;

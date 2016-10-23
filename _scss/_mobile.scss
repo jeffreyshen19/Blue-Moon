@@ -45,6 +45,7 @@
 
 @media screen and (max-width: 600px){
     #content{
+        padding-bottom: 100px;
         #home{
             width: 90vw;
             #home-grid{
@@ -67,7 +68,7 @@
                 .wrap{
                     section{
                         width: 100%;
-                       
+
                         &:nth-child(1){
                             margin: 0 0 -6px;
                         }
@@ -98,12 +99,14 @@
         height: 50px;
         text-align: center;
         display: block;
-        padding: $universal-padding;
+        padding-top: $universal-padding;
+        padding-bottom: $universal-padding;
         p,a{
             line-height: 1em;
         }
         .left, .right{
             width: 100%;
+            padding: 0;
         }
         .right{
             text-align: center;
@@ -111,7 +114,7 @@
     }
     #announcements{
         h2{
-            background: #c4c4c4; 
+            background: #c4c4c4;
             padding-left: $universal-padding / 2;
             width: 120px;
             margin-right: $universal-padding / 2 + 10px;

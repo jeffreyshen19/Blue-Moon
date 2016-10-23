@@ -50,27 +50,32 @@ header {
         position: relative;
         font-family: montserrat;
         font-size: 0.9em;
-        background: #c4c4c4; 
+        background: #c4c4c4;
         padding-left: $universal-padding;
         width: 150px;
-        &:after { 
-            content: " "; 
-            display: block; 
-            width: 0; 
+        &:after {
+            content: " ";
+            display: block;
+            width: 0;
             height: 0;
-            border-top: 18px solid transparent;          
+            border-top: 18px solid transparent;
             border-bottom: 17px solid transparent;
             border-left: 15px solid #c4c4c4;
             position: absolute;
             top: 50%;
-            margin-top: -18px; 
+            margin-top: -18px;
             left: 100%;
-            z-index: 2; 
+            z-index: 2;
         }
         margin-right: $universal-padding;
     }
     p{
         font-family: sourcesanspro;
         display: inline;
+    }
+    a{
+      color: $blue;
+      font-family: sourcesansprobold;
+      text-decoration: none;
     }
 }

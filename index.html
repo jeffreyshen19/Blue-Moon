@@ -4,7 +4,7 @@ title: Blue Moon
 ---
 <div id="announcements">
     <h2>Announcements</h2>
-    <p>Blue Moon up and running!</p>
+    <p>We're looking for writers! Email <a href = "mailto:ali2@andover.edu">ali2@andover.edu</a></p>
 </div>
 
 <div id="home">
@@ -15,7 +15,7 @@ title: Blue Moon
             <div class="img" style="background-image:url(/Assets/Article/{{big_featured.img}})"></div>
             <div class="textbox">
                 <h1>{{big_featured.title}}</h1>
-                <p class="description">{{big_featured.description}}</p>
+                <p class="description">{{big_featured.description | truncate: 60}}</p>
                 <p class="subtitle">
                     <span>{{big_featured.author}}</span> • {{ big_featured.date | date: "%b %d, %Y" }}
                 </p>
@@ -27,7 +27,7 @@ title: Blue Moon
                 <div class="img" style="background-image:url(/Assets/Article/{{featured_posts[1].img}})"></div>
                 <div class="textbox">
                     <h1>{{featured_posts[1].title}}</h1>
-                    <p class="description">{{featured_posts[1].description}}</p>
+                    <p class="description">{{featured_posts[1].description | truncate: 25}}</p>
                     <p class="subtitle">
                         <span>{{featured_posts[1].author}}</span> • {{ featured_posts[1].date | date: "%b %d, %Y" }}
                     </p>
@@ -38,7 +38,7 @@ title: Blue Moon
                 <div class="img" style="background-image:url(/Assets/Article/{{featured_posts[2].img}})"></div>
                 <div class="textbox">
                     <h1>{{featured_posts[2].title}}</h1>
-                    <p class="description">{{featured_posts[2].description}}</p>
+                    <p class="description">{{featured_posts[2].description | truncate: 25}}</p>
                     <p class="subtitle">
                         <span>{{featured_posts[2].author}}</span> • {{ featured_posts[2].date | date: "%b %d, %Y" }}
                     </p>
