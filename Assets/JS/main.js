@@ -27,6 +27,5 @@ $(document).ready(function(){
         $(this).attr("src","/Assets/Images/2.png");
     });
     var daysuntil = Math.round((nextArticle.getTime() - now) / 86400000);
-    console.log(daysuntil)
     $("#days-until h1").html(daysuntil);
 });

@@ -1,0 +1,16 @@
+---
+layout: nil
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.categories }}",
+      "author"   : "{{post.author}}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date }}",
+      "description" : "{{post.description}}",
+      "email": "{{post.email}}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
