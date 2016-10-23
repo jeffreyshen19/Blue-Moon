@@ -9,13 +9,16 @@
             color: $blue;
         }
     }
+    strong{
+      font-family: sourcesansprobold;
+    }
     h1 {
         font-family: montserrat;
         color: $black;
         line-height: 1em;
         margin-bottom: 5px;
     }
-    p {
+    p, ol {
         font-family: sourcesanspro;
         color: $gray;
     }
