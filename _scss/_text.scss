@@ -19,7 +19,7 @@ $black: #464646;
 $gray: #6c6c6c;
 $light-gray: #b9b9b9;
 $yellow: #F4D03F;
-    
+
 a, a i{
     transition: 0.2s all;
 }
@@ -28,7 +28,7 @@ a, a i{
     display: block;
     text-align: center;
     overflow: hidden;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .header-line > span {
@@ -71,7 +71,7 @@ h1{
     }
     hr{
         width: 25px;
-        margin: 0 0 5px calc(50% - 12.5px);
+        margin: 0 0 7px calc(50% - 12.5px);
         border: none;
         border-top: 3px solid $black;
     }
