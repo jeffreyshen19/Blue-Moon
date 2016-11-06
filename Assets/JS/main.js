@@ -29,3 +29,7 @@ $(document).ready(function(){
     var daysuntil = Math.round((nextArticle.getTime() - now) / 86400000);
     $("#days-until h1").html(daysuntil);
 });
+
+function dropdown(){
+  $("#dropdown-menu").toggle();
+}

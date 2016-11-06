@@ -57,4 +57,18 @@ nav {
             font-size: 15px;
         }
     }
+    #dropdown-menu{
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background-color: $light-gray;
+      padding: 0 20px 0 20px;
+      a{
+        display: block;
+        line-height: 2.7em;
+        color: $gray;
+      }
+    }
 }
