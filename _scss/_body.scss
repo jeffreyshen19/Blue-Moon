@@ -159,6 +159,30 @@
                 width: 100%;
             }
         }
+        #magazines{
+          margin: 30px auto;
+          .magazine{
+            width: 300px;
+            position: relative;
+            display: inline-block;
+            a{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+            }
+            img{
+              height: auto;
+              width: 100%;
+            }
+            p{
+              margin-top: 5px;
+              font-family: montserrat;
+            }
+          }
+
+        }
         #subscribe, #days-until{
             background-color: #dcdcdc;
         }
