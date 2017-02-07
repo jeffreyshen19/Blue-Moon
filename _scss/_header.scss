@@ -1,6 +1,5 @@
 header {
-    background-color: #171717;
-    height: 170px;
+    height: 220px;
     color: #bcbcbc;
     box-sizing: border-box;
     position: relative;
@@ -28,6 +27,10 @@ header {
         float: right;
         margin-top: 40px;
     }*/
+    background-image: url("/Assets/Images/cover.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #colorstrip {
