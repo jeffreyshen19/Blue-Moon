@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #results{
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <form id = "form">
+    Title:<br>
+    <input type = "text" name = "title" id = "title"><br>
+    Description:<br>
+    <input type = "text" name = "description" id = "description"><br>
+    Categories:<br>
+    <input type = "radio" name = "category" class = "category" value = "General" checked> General
+    <input type = "radio" name = "category" class = "category" value = "Science"> Science
+    <input type = "radio" name = "category" class = "category" value = "Math"> Math
+    <input type = "radio" name = "category" class = "category" value = "Technology"> Technology<br>
+    Author's Name:<br>
+    <input type = "text" name = "name" id = "name"><br>
+    Email:<br>
+    <input type = "text" name = "email" id = "email"><br>
+    Featured?:
+    <input type = "checkbox" name = "featured" value = "isFeatured" id = "checkbox"><br>
+    Image:<br>
+    <input type = "text" name = "image" id = "image"><br>
+    Sources:<br>
+    <textarea name = "sources" id = "sources"></textarea>
+    <br>
+    Article:<br>
+    <textarea name = "article" id = "article"></textarea>
+    <br>
+  </form>
+  <button onclick = "generateDocument()" id = "button">GENERATE!</button>
+  <div id = "results">
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src = "parser.js"></script>
+</body>
+</html>
