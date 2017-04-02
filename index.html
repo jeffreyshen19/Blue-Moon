@@ -83,7 +83,7 @@ title: Blue Moon
             <section>
                 <a href="{{ post.url | prepend: site.baseurl }}"></a>
                 <h3>{{ post.title | truncate: 50 }}</h3>
-                <p>{{post.description}}</p>
+                <p>{{post.description | truncate: 150 }}</p>
                 <p class="subtitle">
                     <span>{{post.author}}</span> • {{ post.date | date: "%b %d, %Y" }}
                 </p>

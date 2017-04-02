@@ -7,7 +7,7 @@ function generateDocument(){
 }
 
 function generateResults(){
-  result += "---\nlayout:post\n";
+  result += "---\nlayout: post\n";
   result += "title: \"" + title + "\"\n";
   result += "description: \"" + description + "\"\n";
   result += "categories: " + category + "\n";
@@ -19,15 +19,15 @@ function generateResults(){
     result += "sources: |\n";
     var sourcesArr = sources.split("\n");
     for(var i = 0; i < sourcesArr.length; i++){
-      result += sourcesArr[i].trim() + "&lt;br&gt;\n";
+      result += "&emsp;" + sourcesArr[i].trim() + "&lt;br&gt;\n";
     }
   }
+  result += "---\n";
   var articleArr = article.trim().split("\n");
   console.log(articleArr);
   for(var i = 0; i < articleArr.length; i++){
     result += articleArr[i].trim() + "&lt;br&gt;&lt;br&gt;\n";
   }
-  result += "---\n";
 }
 
 function getResults(){
