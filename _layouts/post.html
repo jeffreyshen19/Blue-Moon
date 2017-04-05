@@ -33,6 +33,11 @@
                 <br>
 
                 <span><i class = "fa fa-calendar"></i> {{ page.date | date: '%B %d, %Y' }}</span>
+
+                {% if page.download %}
+                  <span><a href = "/Assets/{{page.download}}" download target = "_blank"><i class = "fa fa-download"></i> Download this article</a></span>
+                {% endif %}
+
                 {% if page.featured %}
                     <span><i class = "fa fa-star"></i> Featured</span>
                 {% endif %}

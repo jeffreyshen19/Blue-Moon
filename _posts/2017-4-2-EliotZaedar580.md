@@ -5,6 +5,7 @@ description: "Did you know that the microbiota that inhabit your gut can influen
 categories: Science
 author: Eliot Zaedar
 email: ezaedar@andover.edu
+download: bio580/ezaeder.pdf
 sources: |
   Amund, O. D. "Exploring the Relationship between Exposure to Technological and Gastrointestinal Stress and Probiotic Functional Properties of Lactobacilli and Bifidobacteria." Canadian Journal of Microbiology. U.S. National Library of Medicine, 2016. Web. 06 Feb. 2017. .<br><br>
   Aroniadis, Olga C., and Lawrence J. Brandt. "Fecal Microbiota Transplantation: Past, Present and Future."  Current Opinion in Gastroenterology. U.S. National Library of Medicine, 29 Jan. 2013. Web. 19 Jan. 2017. .<br><br>
