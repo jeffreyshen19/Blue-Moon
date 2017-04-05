@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blue Moon | Bio 580 Special Edition
+header: Biology 580
+subtitle: In collaboration with the Phillips Academy biology department, Blue Moon is releasing a special edition of the research papers written by students
+permalink: "/biology"
+---
+
+<div id="home">
+    <div class = "post-list">
+        {% for post in site.posts %}
+          {% if post.biology %}
+            <section>
+                <a href="{{ post.url | prepend: site.baseurl }}"></a>
+                <h3>{{ post.title | escape }}</h3>
+                <p>{{post.description}}</p>
+                <p class = "subtitle">
+                    <span>{{post.author}}</span> • {{ post.date | date: "%b %d, %Y" }}
+                </p>
+            </section>
+          {% endif %}
+        {% endfor %}
+    </div>
+</div>

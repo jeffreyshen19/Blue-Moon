@@ -6,6 +6,7 @@ categories: Science
 author: Daniel Ulanovsky
 email: dulanovsky@andover.edu
 download: bio580/dulanovsky.pdf
+biology: true
 sources: |
   Aaron, D. M. (2016, June). Cutaneous cysts. Retrieved January 31, 2017, from Merck Manual Professional Version website: http://www.merckmanuals.com/professional/dermatologic-disorders/benign-skin-tumors,-growths,-and-vascular-lesions/cutaneous-cysts<br><br>
   Calne, S. (Ed.). (2006). Management of Wound Infection [Pamphlet]. London: European Wound Management Associatione.<br><br>

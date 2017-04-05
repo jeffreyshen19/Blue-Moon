@@ -6,6 +6,7 @@ categories: Science
 author: Grace Ann Limoncelli
 email: glimoncelli@andover.edu
 download: bio580/glimoncelli.pdf
+biology: true
 sources: |
   Amancio, A.P., et al. "Molecular analysis of patients suspected of Fragile X Syndrome."  Genetics and Molecular Research , vol. 14, no. 4, 18 Nov. 2015, doi:10.4238/2015.November.18.30. Accessed 14 Dec. 2016.<br><br>
   Ardui, S., et al. "Detecting AGG Interruptions in Male and Female FMR1 Premutation Carriers by Single-Molecule Sequencing."  Human Mutation , 24 Nov. 2016.  PubMed , doi:10.1002/humu.23150. Accessed 12 Jan. 2017.<br><br>

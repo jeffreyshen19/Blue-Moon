@@ -6,6 +6,7 @@ categories: Science
 author: Emily Humphreys
 email: ehumphreys@andover.edu
 download: bio580/ehumphreys.pdf
+biology: true
 sources: |
   Bledsoe, Gregory., et al. Expedition and Wilderness Medicine. Cambridge University Press (2008).<br><br>
   Bowes, Amy L., and Ping K. Yip. "Modulating Inflammatory Cell Responses to Spinal Cord Injury: All in Good Time." Journal of neurotrauma 31.21 (2014): 1753-66. ProQuest. Web. 10 Jan. 2017.<br><br>
