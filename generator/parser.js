@@ -15,6 +15,7 @@ function generateResults(){
   result += "email: " + email + "@andover.edu\n";
   if(featured) result += "featured: true\n";
   if(image.length > 0) result += "img: " + image + "\n";
+  if(download.length > 0) result += "download: " + download + "\n";
   if(sources.length > 0){
     result += "sources: |\n";
     var sourcesArr = sources.split("\n");
@@ -40,6 +41,7 @@ function getResults(){
   image = $("#image").val();
   sources = $("#sources").val();
   article = $("#article").val();
+  download = $("#download").val();
 }
 
 function redirectToResults(){
