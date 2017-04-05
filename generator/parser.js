@@ -34,7 +34,7 @@ function generateResults(){
 function getResults(){
   title = $("#title").val();
   description = $("#description").val();
-  category = $(".category").val();
+  category = $(".category").filter(":checked").val();
   name = $("#name").val();
   email = $("#email").val();
   featured = $("#checkbox").is(":checked");
