@@ -5,3 +5,7 @@ Blue Moon is Phillip's Academy first and only STEM based publication. It publish
 ## Contributing
 
 We really encourage you to contribute! Make sure to submit a pull request
+
+## Authors
+
+* **Jeffrey Shen**
