@@ -13,6 +13,7 @@ $(document).ready(function(){
     else if (hash == "#all" || hash == ""){
       $("#showyear").show();
       $("#showmonth").show();
+      $("#showbot").show();
     }
     else if (hash == "#year"){
       $("#year-all").show();
